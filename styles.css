@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #fff;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.channel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.channel img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.channel-info {
+    margin-left: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff0a16;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.modal-content {
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #777;
+}
+
+.close-icon {
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.close-icon:hover {
+    color: #ff0a16;
+}

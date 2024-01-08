@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de TV Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>App de TV Online</h1>
+    </header>
+
+    <main>
+        <img class="banner" src="https://www.tvplayer.com.br/img/Software-Midia-Indoor-Mais-Facilidades.png" alt="Banner">
+
+        <input type="text" class="search-bar" placeholder="Pesquisar canais" oninput="searchChannels()">
+
+        <div class="channel" id="channel1">
+            <img src="https://yt3.googleusercontent.com/1rcaN-4MZj-k83upibyNIFvfumOQ5NTrvybPfCRe8yXRU_3NUdKBRRhHdkRUMvbyyWBdaWl6iA=s900-c-k-c0x00ffffff-no-rj" alt="Animal Planet">
+            <div class="channel-info">
+                <h2>Animal Planet</h2>
+                <button onclick="openModal('https://playertv.net/tv.php?c=animal-planet')">Assistir Agora</button>
+            </div>
+        </div>
+
+        <div class="channel" id="channel2">
+            <img src="https://th.bing.com/th/id/R.0ac567f04dc3f8680a051fefab4d1292?rik=cNp%2fTks%2b8Hb1xg&pid=ImgRaw&r=0" alt="Adult Swim">
+            <div class="channel-info">
+                <h2>Adult Swim</h2>
+                <button onclick="openModal('https://playertv.net/tv.php?c=swim')">Assistir Agora</button>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal()" class="close-icon">&times;</span>
+            <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 App de TV Online
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
